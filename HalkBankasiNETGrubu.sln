@@ -141,7 +141,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIProject.Services", "APIP
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIProject.API", "APIProject.API\APIProject.API.csproj", "{EE0208B8-EF26-448F-9396-6FCC6DBC03E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "55-API-JWT-Authentication", "55-API-JWT-Authentication\55-API-JWT-Authentication.csproj", "{07033013-1AD2-42AB-934D-1B5151C2EDA9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "55-API-JWT-Authentication", "55-API-JWT-Authentication\55-API-JWT-Authentication.csproj", "{07033013-1AD2-42AB-934D-1B5151C2EDA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "56-SOLIDPrensipleri", "56-SOLIDPrensipleri\56-SOLIDPrensipleri.csproj", "{D6F6A9BA-F9DB-45BF-B4F8-AEAA35B13A2F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -413,6 +415,10 @@ Global
 		{07033013-1AD2-42AB-934D-1B5151C2EDA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07033013-1AD2-42AB-934D-1B5151C2EDA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07033013-1AD2-42AB-934D-1B5151C2EDA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6F6A9BA-F9DB-45BF-B4F8-AEAA35B13A2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6F6A9BA-F9DB-45BF-B4F8-AEAA35B13A2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6F6A9BA-F9DB-45BF-B4F8-AEAA35B13A2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6F6A9BA-F9DB-45BF-B4F8-AEAA35B13A2F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
