@@ -1,0 +1,28 @@
+﻿@model IEnumerable<Personel>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<table>
+    <thead>
+        <th>ID</th>
+        <th>Name</th>
+        <th>BirthDate</th>
+        <th>Department</th>
+        <th>WorkingType</th>
+    </thead>
+    <tbody>
+        @foreach (Personel item in Model)
+        {
+            <tr>
+                <td>@item.ID</td>
+                <td>@item.Name</td>
+                <td>@item.BirthDate</td>
+                <td>@item.Department</td>
+                <td>@item.WorkingType.GetType().GetMember(item.WorkingType.ToString()).First().CustomAttributes.First().NamedArguments.First().TypedValue.Value.ToString()</td>
+            </tr>
+        }
+    </tbody>
+</table>

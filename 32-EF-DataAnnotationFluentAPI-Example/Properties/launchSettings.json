@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "32-EF-DataAnnotationFluentAPI-Example": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:55956;http://localhost:55957"
+    }
+  }
+}

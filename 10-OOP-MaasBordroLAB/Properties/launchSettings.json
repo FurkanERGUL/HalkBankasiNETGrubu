@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "10-OOP-MaasBordroLAB": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:55914;http://localhost:55915"
+    }
+  }
+}

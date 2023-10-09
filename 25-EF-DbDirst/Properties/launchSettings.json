@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "25-EF-DbDirst": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:55944;http://localhost:55945"
+    }
+  }
+}

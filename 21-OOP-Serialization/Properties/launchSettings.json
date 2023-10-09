@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "21-OOP-Serialization": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:55930;http://localhost:55931"
+    }
+  }
+}

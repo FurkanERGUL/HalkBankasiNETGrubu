@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+@if (User.Identity.IsAuthenticated){
+    <a asp-controller="user" asp-action="LogOut">Çıkış yap</a>
+    <br />
+    <a asp-controller="user" asp-action="Listele">Kişileri Listele</a>
+}else{
+    <a asp-controller="user" asp-action="LogIn">Çıkış yap</a>
+}
+<br />
+
+<a asp-controller="user" asp-action="Create">Yeni Kişi Oluştur</a>

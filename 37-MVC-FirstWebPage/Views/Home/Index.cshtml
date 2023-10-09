@@ -1,0 +1,60 @@
+﻿@using _37_MVC_FirstWebPage.Models;
+@model _37_MVC_FirstWebPage.Models.Movie
+@{
+    ViewData["Title"] = "Index";
+    
+}
+
+<h1>Home Page</h1>
+<p style="font-weight:bold; color: blue;">
+    The Movie: <i>@Model.Title</i> <br />
+    Relased Date: <i>@Model.RelaseDate</i>
+
+</p>
+<p>Merhaba Saat Şuan: @DateTime.Now oldu</p>
+
+@{
+    string helloWorld = "<b>Merhaba Dünya, Nasılsın?</b>";
+    int sayi = 10;
+    <b>FFF yine devam eder yazmaya bunun unutma</b>
+}
+<hr />
+<p>Açılış @helloWorld+@sayi</p>
+<p>Html: @Html.Raw(helloWorld)</p> @*içine yazdığın html methodunu da çalıştırır.*@
+
+<hr />
+@if(DateTime.Now.Year<=2023){
+    <span>the year 2023</span>
+}else{
+    <span>the year 2024</span>
+}
+@{
+    List<string> Isimler = new List<string>()
+    {
+    "FF","FE","LOSER"
+    };
+}
+<ul>
+    @{
+        for (int i = 0; i < Isimler.Count; i++)
+        {
+            <li>@Isimler[i]</li>
+        }
+    }
+</ul>
+
+<hr />
+
+@{
+    List<Movie> movies = new List<Movie>();
+    movies.Add(new Movie() { Id = 1, Title = "Eşkıya", RelaseDate = new DateTime(1996, 11, 26) });
+    movies.Add(new Movie() { Id = 2, Title = "FightClub", RelaseDate = new DateTime(1999, 10, 15) });
+    movies.Add(new Movie() { Id = 3, Title = "ForestGump", RelaseDate = new DateTime(1994, 7, 6)});
+    
+}
+<ul>
+    @foreach (var item in movies)
+    {
+        <li>@item.Id-) @item.Title - @item.RelaseDate</li>
+    }
+</ul>

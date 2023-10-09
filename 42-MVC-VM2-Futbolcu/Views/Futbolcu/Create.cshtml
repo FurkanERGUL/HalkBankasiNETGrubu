@@ -1,0 +1,60 @@
+﻿@model _42_MVC_VM2_Futbolcu.Models.VMs.CreateVM
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Futbolcu</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Futbolcu.FutbolcuID" class="control-label"></label>
+                <input asp-for="Futbolcu.FutbolcuID" class="form-control" />
+                <span asp-validation-for="Futbolcu.FutbolcuID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Futbolcu.FutbolcuAd" class="control-label"></label>
+                <input asp-for="Futbolcu.FutbolcuAd" class="form-control" />
+                <span asp-validation-for="Futbolcu.FutbolcuAd" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Futbolcu.FutbolcuYas" class="control-label"></label>
+                <input asp-for="Futbolcu.FutbolcuYas" class="form-control" />
+                <span asp-validation-for="Futbolcu.FutbolcuYas" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Futbolcu.MevkiID" class="control-label"></label>
+                <select asp-for="Futbolcu.MevkiID" class="form-control">
+                    @foreach (var item in Model.Mevkiler)
+                    {
+                        <option value="@item.MevkiID">@item.MevkiAd</option>
+                    }
+                </select>
+                <span asp-validation-for="Futbolcu.MevkiID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Futbolcu.TakimID" class="control-label"></label>
+                <select asp-for="Futbolcu.TakimID" class="form-control">
+                    @foreach (var item in Model.Takimlar)
+                    {
+                        <option value="@item.TakimID">@item.TakimAd</option>
+                    }
+                </select>
+                <span asp-validation-for="Futbolcu.TakimID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

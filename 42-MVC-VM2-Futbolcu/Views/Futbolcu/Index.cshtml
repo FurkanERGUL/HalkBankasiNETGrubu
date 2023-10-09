@@ -1,0 +1,33 @@
+﻿@using _42_MVC_VM2_Futbolcu.Models.VMs;
+@model List<ListeVM>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">FutbolcuID</th>
+            <th scope="col">İsim</th>
+            <th scope="col">Yaş</th>
+            <th scope="col">Mevki</th>
+            <th scope="col">Takım</th>
+            <th scope="col">TeknikDirektör</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th scope="row">@item.Futbolcu.FutbolcuID</th>
+                <td>@item.Futbolcu.FutbolcuAd</td>
+                <td>@item.Futbolcu.FutbolcuYas</td>
+                <td>@item.Mevki.MevkiAd</td>
+                <td>@item.Takim.TakimAd</td>
+                <td>@item.Takim.TeknikDirektor</td>
+            </tr>
+        }
+    </tbody>
+</table>

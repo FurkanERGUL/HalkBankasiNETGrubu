@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "16-OOP-Struct": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:55928;http://localhost:55929"
+    }
+  }
+}

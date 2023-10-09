@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "28-EF-CodeFirstModelDbContextDbSet": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:55948;http://localhost:55949"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewData["Title"] = "GetMessage";
+}
+
+<h1>GetMessage</h1>
+
+@await Html.PartialAsync("_Greeting")
+@model MessageSave
+<form asp-controller="Contact" asp-action="GetMessage" method="post">
+    <div class="form-group">
+        <label asp-for="FirstName"></label>
+        <input asp-for="FirstName">
+    </div>
+    <br />
+    <div class="form-group">
+        <label asp-for="LastName"></label>
+        <input asp-for="LastName">
+    </div>
+    <br />
+    <div class="form-group">
+        <label asp-for="Subject"></label>
+        <input asp-for="Subject">
+    </div>
+    <br />
+    <div class="form-group">
+        <label asp-for="Mesaj1"></label>
+        <input asp-for="Mesaj1">
+    </div>
+    <br />
+    <div class="form-group">
+        <label asp-for="Mesaj2"></label>
+        <input asp-for="Mesaj2">
+    </div>
+    <br />
+    <input type="submit" value="Gönder">
+</form>
+<p>@ViewBag.msjDondur</p>

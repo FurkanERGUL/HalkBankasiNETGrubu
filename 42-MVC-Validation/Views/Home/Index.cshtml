@@ -1,0 +1,20 @@
+﻿@using _42_MVC_Validation.Classes;
+@{
+    ViewData["Title"] = "Home Page";
+}
+@model SystemUser
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <div class="card">
+        <h2>Kayıt Sayfası</h2>
+        <div class="card-body">
+            <form asp-action="Index" asp-controller="Home" method="post">
+                <div class="form-group">
+                    <label asp-for="UserName">Kullanıcı adı</label>
+                    <input asp-for="UserName" class="form-control" />
+                </div>
+            </form>
+        </div>
+    </div>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>

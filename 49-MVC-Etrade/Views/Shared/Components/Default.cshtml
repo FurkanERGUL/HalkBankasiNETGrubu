@@ -1,0 +1,13 @@
+﻿@using _49_MVC_Etrade.Models.VMs;
+
+@model ShoppingCardVM
+
+<div>
+    <h3>Sepet</h3>
+    <ul>
+        @foreach (var item in Model.CardItems)
+        {
+            <li>@item.Name</li>
+        }
+    </ul>
+</div>

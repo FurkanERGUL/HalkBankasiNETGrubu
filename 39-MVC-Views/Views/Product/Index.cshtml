@@ -1,0 +1,83 @@
+﻿@model List<Product>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+@await Html.PartialAsync("_Greeting")
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Title</th>
+            <th scope="col">Price</th>
+            <th scope="col">Detail</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th scope="row">@item.Id</th>
+                <td>@item.Title</td>
+                <td>@item.Price</td>
+                <td><a asp-controller="Product" asp-action="Detail" asp-route-Id="@item.Id">Detay</a></td>
+            </tr>
+        }
+
+    </tbody>
+</table>
+
+<hr />
+<h3>@ViewBag.Subject</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Title</th>
+            <th scope="col">Price</th>
+            <th scope="col">Detail</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var item in ViewBag.Products)
+        {
+                <tr>
+                    <th scope="row">@item.Id</th>
+                    <td>@item.Title</td>
+                    <td>@item.Price</td>
+                    <td><a asp-controller="Product" asp-action="Detail" asp-route-Id="@item.Id">Detay</a></td>
+                </tr>
+        }
+
+    </tbody>
+</table>
+
+<hr />
+<h3>@ViewData["Subject2"]</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Title</th>
+            <th scope="col">Price</th>
+            <th scope="col">Detail</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var item in ViewData["ProductsVD"] as List<Product>)
+        {
+            <tr>
+                <th scope="row">@item.Id</th>
+                <td>@item.Title</td>
+                <td>@item.Price</td>
+                <td><a asp-controller="Product" asp-action="Detail" asp-route-Id="@item.Id">Detay</a></td>
+            </tr>
+        }
+
+    </tbody>
+</table>

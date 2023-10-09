@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "04-OOP-InheritanceLAB": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:55900;http://localhost:55901"
+    }
+  }
+}
